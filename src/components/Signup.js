@@ -16,17 +16,20 @@ const Signup = (props) => {
   const handleSubmit = async (e) => {
     const { name, email, password } = credentials;
     e.preventDefault();
-    const response = await fetch(`http://localhost:5000/api/auth/createUser`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    });
+    const response = await fetch(
+      `https://mydiary-m3v3.onrender.com/api/auth/createUser`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      }
+    );
     const json = await response.json();
     console.log(json);
     if (json.success) {

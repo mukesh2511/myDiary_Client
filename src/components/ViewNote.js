@@ -5,7 +5,7 @@ import "./NoteItem.css";
 
 const ViewNote = () => {
   const [note, setNote] = useState({});
-  const host = "http://localhost:5000";
+  const host = "https://mydiary-m3v3.onrender.com";
   const location = useLocation().pathname.split("/")[2];
   console.log(location);
   useEffect(() => {

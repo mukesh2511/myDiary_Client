@@ -5,7 +5,7 @@ import NoteContext from "./noteContext";
 const NoteState = (props) => {
   // const context = useContext(alertContext);
 
-  const host = "http://localhost:5000";
+  const host = "https://mydiary-m3v3.onrender.com";
   const notesInitial = [];
   const [notes, setNotes] = useState(notesInitial);
 
