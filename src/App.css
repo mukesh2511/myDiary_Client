@@ -33,7 +33,7 @@
   color: #61dafb;
 }
 .con {
-  background-image: url(../public/bg.svg);
+  /* background-image: url(../public/bg.svg); */
   background-color: rgb(192, 190, 190);
   height: 100vh;
 }
