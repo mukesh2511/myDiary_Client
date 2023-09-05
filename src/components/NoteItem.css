@@ -25,9 +25,11 @@
 }
 .box .icon div .delete {
   color: red;
+  cursor: pointer;
 }
 .box .icon div .edit {
   color: green;
+  cursor: pointer;
 }
 .box .icon div button {
   margin-right: 5px;
