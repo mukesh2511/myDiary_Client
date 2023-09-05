@@ -71,7 +71,7 @@ const Notes = (prop) => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                Edit Password
+                Edit Note
               </h5>
               <button
                 type="button"
@@ -150,16 +150,16 @@ const Notes = (prop) => {
                   note.etitle.length < 5 || note.edescription.length < 5
                 }
               >
-                Update Password
+                Update Note
               </button>
             </div>
           </div>
         </div>
       </div>
       <div className="row my-3">
-        <h2>Your Passwords</h2>
+        <h2>Your Notes</h2>
         <div className="container">
-          {notes.length === 0 && "No password to display"}
+          {notes.length === 0 && "No Notes to display"}
         </div>
         {notes.map((note) => {
           return (
